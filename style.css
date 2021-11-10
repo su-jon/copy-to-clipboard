@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.wapper {
+  width: 500px;
+  margin: 1.6rem auto;
+  color: #414141;
+  font-family: sans-serif;
+}
+.card {
+  border-radius: 22px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card-background-image {
+  background-image: url("https://unsplash.it/600/300");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50%;
+}
+.card-details {
+  position: relative;
+  background-color: palette(white);
+  padding: 0 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-details::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20px;
+  top: -19px;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right top, #fff 49%, transparent 52%);
+}
+.card-info {
+  margin-top: auto;
+}
+
+.card-label {
+  font-size: 16px;
+  color: #909090;
+  font-weight: normal;
+}
+.btn {
+  padding: 5px 20px;
+  cursor: pointer;
+}
+input {
+  border: none;
+  font-size: 20px;
+}
+input:focus {
+  border: none;
+}
+input::selection {
+  background: none;
+}
